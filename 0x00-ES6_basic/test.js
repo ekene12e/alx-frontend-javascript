@@ -27,7 +27,7 @@ export function taskFirst() {
     return `lenght = ${args.length}, contents = ${args}`;
   }
   console.log(f(2, 1, 6, 8, 99));
-  console.log(f());*/
+  console.log(f());
 
   export default function getBudgetObject(income, gdp, capita) {
     const budget = {
@@ -39,4 +39,9 @@ export function taskFirst() {
     return budget;
   }
 
-  console.log(getBudgetObject(400, 700, 900));
+  console.log(getBudgetObject(400, 700, 900));*/
+
+  export default function returnHowManyArguments( ...args ) {
+    return args.length
+  }
+  returnHowManyArguments("Hello", "Holberton", 2020);
